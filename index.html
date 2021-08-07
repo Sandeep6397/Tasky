@@ -52,18 +52,19 @@
                 </div>
                 <div class="mb-3">
                     <label for="taskdescription" class="form-label">Task Description</label>
-                    <textarea 
-                        type="textarea" 
-                        rows="5" 
+                    <textarea  
+                        rows="6" 
                         class="form-control" 
-                        id="taskdescription">
-                    </textarea>
+                        id="taskdescription"
+                        
+                    ></textarea>
+                   
                    
                 </div>
             </div>
             <div class="modal-footer d-flex justify-content-start">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-primary" onclick="saveChanges()" data-bs-dismiss="modal">Save changes</button>
             </div>
         </div>
         </div>
@@ -93,12 +94,13 @@
         </div>
     </nav>
 
-      <!-- Search Bar -->
+      
     <div class="container">
+        <!-- Search Bar -->
         <section class="mt-5 ">
             <div class="row justify-content-center ">
                 <div class="col-md-6 ">
-                    <div class="container" >
+                    
                         <div class="input-group mb-3 shadow-sm">
                           <input 
                             type="text" 
@@ -110,7 +112,7 @@
                           <span class="input-group-text" id="basic-addon2">
                             <i class="fas fa-search"></i>
                           </span>
-                        </div>
+                        
                       </div>
                 </div>
             </div>
@@ -118,7 +120,7 @@
 
         <!-- Card -->
         <section>
-            <div class="row">
+            <div class="row task__container">
                 <div class="col-md-6 col-lg-4">
                     <div class="card ">
                         <div class="card-header d-flex justify-content-end gap-2">
@@ -137,6 +139,8 @@
                         </div>
                     </div>
                 </div>
+
+                
             </div>
         </section>
     </div>
@@ -147,7 +151,14 @@
 
 
 
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script> 
+    <!-- JavaScript Bundle with Popper -->
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" 
+        crossorigin="anonymous">
+    </script> 
+
+    <!-- Our js file -->
+    <script src="index.js"></script>
 </body>
 </html>
