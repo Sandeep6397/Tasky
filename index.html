@@ -13,6 +13,61 @@
     <title>Tasky</title>
 </head>
 <body>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Add New Card</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="imageurl" class="form-label">Image Url</label>
+                    <input 
+                        type="url" 
+                        class="form-control" 
+                        id="imageurl"
+                        placeholder="http://example.com/image.png"
+                    />
+                </div>
+                <div class="mb-3">
+                    <label for="tasktitle" class="form-label">Task Title</label>
+                    <input 
+                        type="text" 
+                        class="form-control" 
+                        id="tasktitle" 
+                        placeholder="Apache"
+                    />
+                </div>
+                <div class="mb-3">
+                    <label for="tasktype" class="form-label">Task Type</label>
+                    <input 
+                        type="text" 
+                        class="form-control" 
+                        id="tasktype" 
+                        placeholder="Bike"
+                    />
+                </div>
+                <div class="mb-3">
+                    <label for="taskdescription" class="form-label">Task Description</label>
+                    <textarea 
+                        type="textarea" 
+                        rows="5" 
+                        class="form-control" 
+                        id="taskdescription">
+                    </textarea>
+                   
+                </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-start">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+        </div>
+    </div>
     
     <!-- Nav bar -->
     <nav class="navbar navbar-expand-md navbar-light bg-light shadow-sm ">
@@ -31,8 +86,8 @@
             </ul>
             <!-- Button ADD NEW -->
             
-            <button type="button" class="btn btn-primary">
-                <i class="fas fa-plus"></i>Add New
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <i class="fas fa-plus"></i>  Add New
             </button>
           </div>
         </div>
